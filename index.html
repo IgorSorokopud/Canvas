@@ -1,15 +1,25 @@
 <!doctype html>
 <html>
 <head>
-    <title>canvasExample</title>
+    <title>rectExample</title>
     <meta charset='utf-8' />
 </head>
 <body>
-<canvas height='320' width='480' id='example'>Обновите браузер</canvas>
+<canvas id='example'>Обновите браузер</canvas>
 <script>
     var example = document.getElementById("example"),
-            ctx     = example.getContext('2d');
-    ctx.fillRect(0, 0, example.width, example.height);
+        ctx = example.getContext('2d');
+        example.width  = 640;
+        example.height = 480;
+
+    ctx.fillStyle="green";
+    ctx.fillRect(0,0,10,10);
+
+    ctx.fillStyle="green";
+    ctx.fillRect(20,0,10,10);
+
+    ctx.fillStyle="green";
+    ctx.fillRect(40,0,10,10);
 </script>
 </body>
 </html>
